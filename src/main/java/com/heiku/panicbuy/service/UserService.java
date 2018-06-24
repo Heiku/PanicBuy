@@ -57,7 +57,8 @@ public class UserService {
         }
 
         // 添加 cookie
-        addCookie(response, user);
+        String token = UUIDUtil.uuid();
+        addCookie(response, token, user);
 
         return true;
     }
@@ -73,15 +74,14 @@ public class UserService {
 
         //延长cookie
         if (user != null) {
-            addCookie(response, user);
+            addCookie(response, token, user);
         }
         return user;
     }
 
 
     // Cookie更新，添加
-    private void addCookie(HttpServletResponse response, User user){
-        String token = UUIDUtil.uuid();
+    private void addCookie(HttpServletResponse response, String token, User user){
         redisService.set(UserKey.token, token, user);
 
         Cookie cookie = new Cookie(COOKIE_NAME_TOKEN, token);
