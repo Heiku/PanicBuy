@@ -1,5 +1,6 @@
 package com.heiku.panicbuy.dao;
 
+import com.heiku.panicbuy.entity.OrderInfo;
 import com.heiku.panicbuy.entity.SeckillOrder;
 import org.apache.ibatis.annotations.*;
 
@@ -7,7 +8,7 @@ import org.apache.ibatis.annotations.*;
 public interface OrderDao {
 
 
-    @Select("select * from seckill_order where userid = #{userId} and goods_id = #{goodsId}")
+    @Select("select * from seckill_order where user_id = #{userId} and goods_id = #{goodsId}")
     SeckillOrder selectSeckillOrder(@Param("userId") long userId, @Param("goodsId") long goodsId);
 
 
@@ -21,7 +22,7 @@ public interface OrderDao {
             "values(#{userId}, #{goodsId}, #{goodsName}, #{goodsCount}, #{goodsPrice}, #{orderChannel}, " +
             "#{status}, #{createTime})")
     @SelectKey(keyColumn = "id", keyProperty = "id", resultType = Long.class, before = false, statement = "select last_insert_id()")
-    long insertOrder();
+    long insertOrder(OrderInfo orderInfo);
 
 
     /**

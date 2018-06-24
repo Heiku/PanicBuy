@@ -37,8 +37,9 @@ public class OrderService {
         orderInfo.setOrderChannel(1);
         orderInfo.setStatus(0);
         orderInfo.setUserId(user.getId());
+        orderInfo.setGoodsId(goodsVo.getId());
 
-        long orderId = orderDao.insertOrder();
+        long orderId = orderDao.insertOrder(orderInfo);
 
         // 秒杀订单
         SeckillOrder seckillOrder = new SeckillOrder();
