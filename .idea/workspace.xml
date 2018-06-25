@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6542f4b4-88c9-48d2-be73-7d62e744e2c5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/GoodsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/SeckillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/SeckillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/MainApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/config/UserArgumentResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/config/UserArgumentResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="6542f4b4-88c9-48d2-be73-7d62e744e2c5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,8 +69,8 @@
       <file leaf-file-name="GoodsDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/GoodsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="42" column="99" selection-start-line="42" selection-start-column="96" selection-end-line="42" selection-end-column="99" />
+            <state relative-caret-position="136">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -280,7 +262,8 @@
             </path>
             <path>
               <item name="panicBuy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="panicBuy" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -439,12 +422,12 @@
       <workItem from="1529854811469" duration="336000" />
       <workItem from="1529858343357" duration="80000" />
       <workItem from="1529911990002" duration="12057000" />
-      <workItem from="1529932311324" duration="370000" />
+      <workItem from="1529932311324" duration="2052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98627000" />
+    <option name="totallyTimeSpent" value="100309000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,7 +440,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50065106" side_tool="true" weight="0.32413793" />
@@ -478,8 +460,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49934897" weight="0.3849432" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32458565" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49861878" visible="true" weight="0.24609375" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.48895028" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861878" visible="true" weight="0.24609375" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -912,8 +894,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/GoodsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="42" column="99" selection-start-line="42" selection-start-column="96" selection-end-line="42" selection-end-column="99" />
+        <state relative-caret-position="136">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
