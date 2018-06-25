@@ -19,6 +19,7 @@ public class SeckillService {
 
     /**
      * 秒杀执行操作：减库存 + 记录购买行为
+     *
      *              1.如果先update, update在前面会加锁
      *          锁 + update(发送在mysql网络时间+gc时间） + insert(发送在mysql网络时间+gc时间) + 提交锁
      *          其实的线程就要等，这个锁提交才能执行。

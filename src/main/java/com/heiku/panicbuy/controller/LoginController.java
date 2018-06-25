@@ -36,12 +36,12 @@ public class LoginController {
     // 参数校验,使用自定义注解代替
     @RequestMapping(value = "/dologin", method = RequestMethod.POST)
     @ResponseBody
-    public Result doLogin(HttpServletResponse response, @Valid LoginVo loginVo){
+    public Result<String> doLogin(HttpServletResponse response, @Valid LoginVo loginVo){
         logger.info(loginVo.toString());
 
-        userService.login(response,loginVo);
+        String token = userService.login(response,loginVo);
 
-        return Result.success(true);
+        return Result.success(token);
 
     }
 }
