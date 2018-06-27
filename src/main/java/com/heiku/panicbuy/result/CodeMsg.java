@@ -6,6 +6,7 @@ public enum  CodeMsg {
     SERVER_ERROR(500100, "服务端异常"),
     BIND_ERROR(500101, "参数校验异常"),
 
+
     // LOGIN
     SESSION_ERROR(500210, "Session不存在或已经失效"),
     PASSWORD_EMPTY(500211, "登录密码不能为空"),
@@ -17,7 +18,11 @@ public enum  CodeMsg {
 
     // SECKILL
     SECKILL_OVER(500500, "商品已经被秒杀完了"),
-    SECKILL_REPEATE(500501, "不允许重复参与秒杀活动");
+    SECKILL_REPEATE(500501, "不允许重复参与秒杀活动"),
+
+
+    // ORDER
+    ORDER_NOT_EXIST(500400, "订单不存在");
 
     private int code;
     private String msg;

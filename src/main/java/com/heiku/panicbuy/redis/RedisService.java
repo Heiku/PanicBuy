@@ -98,6 +98,22 @@ public class RedisService {
     }
 
 
+    public <T> boolean delete(KeyPrefix prefix, String key){
+        Jedis jedis = null;
+
+        try {
+            jedis = jedisPool.getResource();
+
+            String realKey = prefix.getPrefix() + key;
+
+            long result =  jedis.del(realKey);
+
+            return result > 0;
+        }finally {
+            returnToPool(jedis);
+        }
+    }
+
     /**
      * 原子递增
      *

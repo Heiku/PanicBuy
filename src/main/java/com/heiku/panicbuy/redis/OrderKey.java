@@ -2,7 +2,10 @@ package com.heiku.panicbuy.redis;
 
 public class OrderKey extends BasePrefix {
 
-    private OrderKey(int expireSeconds, String prefix) {
-        super(expireSeconds, prefix);
+    private OrderKey(String prefix) {
+        super(prefix);
     }
+
+
+    public static OrderKey getSeckillOrderByUidGid = new OrderKey("skug");
 }

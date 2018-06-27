@@ -29,11 +29,70 @@ public class UserService {
     @Autowired
     private RedisService redisService;
 
+
+    /**
+     *  查询对象，采用对象缓存，先从缓存中读取，读取不到再去数据库
+     *
+     * @param id
+     * @return
+     */
     public User getById(long id){
-        return userDao.getById(id);
+
+        // 取缓存
+        User user = redisService.get(UserKey.getById, "" + id, User.class);
+        if (user != null){
+            return user;
+        }
+
+        // 缓存中没有，数据库读取
+        user = userDao.getById(id);
+        if (user != null){
+            redisService.set(UserKey.getById, "" + id, User.class);
+        }
+
+        return user;
     }
 
 
+    /**
+     * 用户密码更改
+     *
+     * @param id
+     * @param password
+     * @return
+     */
+    public boolean updatePwd(String token, long id, String password){
+
+        // 判断对象是否存在
+        User user = getById(id);
+        if (user == null){
+            throw  new GlobalException(CodeMsg.MOBILE_NOT_EXIST);
+        }
+
+
+        // 数据库更新用户信息
+        User updateUser = new User();
+        user.setId(id);
+        user.setPassword(MD5Util.fromPassToDBPass(password, user.getSalt()));
+
+        userDao.updateUser(user);
+
+        // 缓存更新
+        redisService.delete(UserKey.getById, "" + id);
+        user.setPassword(updateUser.getPassword());
+        redisService.set(UserKey.token, token, user);
+
+        return true;
+    }
+
+
+    /**
+     * 登录验证
+     *
+     * @param response
+     * @param vo
+     * @return
+     */
     public String login(HttpServletResponse response, LoginVo vo){
         if (vo == null){
             throw new GlobalException(CodeMsg.SERVER_ERROR);

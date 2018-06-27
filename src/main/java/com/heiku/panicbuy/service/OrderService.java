@@ -4,6 +4,8 @@ import com.heiku.panicbuy.dao.OrderDao;
 import com.heiku.panicbuy.entity.OrderInfo;
 import com.heiku.panicbuy.entity.SeckillOrder;
 import com.heiku.panicbuy.entity.User;
+import com.heiku.panicbuy.redis.OrderKey;
+import com.heiku.panicbuy.redis.RedisService;
 import com.heiku.panicbuy.vo.GoodsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,11 +20,31 @@ public class OrderService {
     private OrderDao orderDao;
 
 
+    @Autowired
+    private RedisService redisService;
+
+
+    /**
+     * 查询秒杀订单(redis中获取)
+     *
+     * @param userId
+     * @param goodsId
+     * @return
+     */
     public SeckillOrder getSeckillOrder(Long userId, Long goodsId) {
-        return orderDao.selectSeckillOrder(userId, goodsId);
+//        return orderDao.selectSeckillOrder(userId, goodsId);
+
+        return redisService.get(OrderKey.getSeckillOrderByUidGid, "" + userId + "_" + goodsId, SeckillOrder.class);
     }
 
 
+    /**
+     * 生成普通订单和秒杀订单
+     *
+     * @param user
+     * @param goodsVo
+     * @return
+     */
     @Transactional
     public OrderInfo createOrder(User user, GoodsVo goodsVo) {
 
@@ -47,8 +69,16 @@ public class OrderService {
         seckillOrder.setGoodsId(goodsVo.getId());
         seckillOrder.setOrderId(orderId);
 
+        // 数据库存储订单信息
         orderDao.insertSeckillOrder(seckillOrder);
 
+        // 缓存中存储订单信息
+        redisService.set(OrderKey.getSeckillOrderByUidGid, "" + user.getId() + "_" + goodsVo.getId(), SeckillOrder.class);
+
         return orderInfo;
+    }
+
+    public OrderInfo getOrderById(String orderId) {
+        return orderDao.selectOrderById(orderId);
     }
 }
