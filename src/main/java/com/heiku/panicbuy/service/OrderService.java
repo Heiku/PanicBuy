@@ -61,19 +61,19 @@ public class OrderService {
         orderInfo.setUserId(user.getId());
         orderInfo.setGoodsId(goodsVo.getId());
 
-        long orderId = orderDao.insertOrder(orderInfo);
+        orderDao.insertOrder(orderInfo);
 
         // 秒杀订单
         SeckillOrder seckillOrder = new SeckillOrder();
         seckillOrder.setUserId(user.getId());
         seckillOrder.setGoodsId(goodsVo.getId());
-        seckillOrder.setOrderId(orderId);
+        seckillOrder.setOrderId(orderInfo.getId());
 
         // 数据库存储订单信息
         orderDao.insertSeckillOrder(seckillOrder);
 
         // 缓存中存储订单信息
-        redisService.set(OrderKey.getSeckillOrderByUidGid, "" + user.getId() + "_" + goodsVo.getId(), SeckillOrder.class);
+        redisService.set(OrderKey.getSeckillOrderByUidGid, "" + user.getId() + "_" + goodsVo.getId(), seckillOrder);
 
         return orderInfo;
     }

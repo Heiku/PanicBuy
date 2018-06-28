@@ -1,6 +1,8 @@
 package com.heiku.panicbuy.controller;
 
 import com.heiku.panicbuy.entity.User;
+import com.heiku.panicbuy.rabbitmq.MessageReceiver;
+import com.heiku.panicbuy.rabbitmq.MessageSender;
 import com.heiku.panicbuy.redis.RedisService;
 import com.heiku.panicbuy.redis.UserKey;
 import com.heiku.panicbuy.result.CodeMsg;
@@ -21,6 +23,15 @@ public class SimpleController {
 
     @Autowired
     private RedisService redisService;
+
+    @Autowired
+    private MessageSender sender;
+
+    @Autowired
+    private MessageReceiver receiver;
+
+
+
 
     @RequestMapping("/thymeleaf")
     public String thymeleaf(Model model){
@@ -76,5 +87,41 @@ public class SimpleController {
 
         Boolean v1 = redisService.set(UserKey.getById,"" + 1, user);
         return Result.success(v1);
+    }*/
+
+
+    /*//direct
+    @RequestMapping("/mq")
+    @ResponseBody
+    public Result<String> MQSend(){
+        sender.send("hello, my first message");
+        return Result.success("Hello, rabbit mq");
+    }
+
+
+    // topic
+    @RequestMapping("/mq/topic")
+    @ResponseBody
+    public Result<String> MQSendTopic(){
+        sender.sendTopic("send topic message");
+        return Result.success("Hello, rabbit mq");
+    }
+
+
+    // fanout
+    @RequestMapping("/mq/fanout")
+    @ResponseBody
+    public Result<String> MQSendFanout(){
+        sender.sendTopic("send fanout message");
+        return Result.success("Hello, rabbit mq");
+    }
+
+
+    // headers
+    @RequestMapping("/mq/headers")
+    @ResponseBody
+    public Result<String> MQSendHeaders(){
+        sender.sendHeaders("send headers message");
+        return Result.success("Hello, rabbit mq");
     }*/
 }

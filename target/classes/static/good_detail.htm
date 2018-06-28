@@ -86,6 +86,10 @@
     });
 
 
+
+    /**
+     *  执行秒杀操作
+     */
     function doSeckill() {
         $.ajax({
             url : "/seckill/doseckill",
@@ -95,7 +99,8 @@
             },
             success : function (data) {
                 if (data.code == 0){
-                    window.location.href = "/order_detail.htm?orderId=" + data.data.id;
+                    // 轮询消息
+                    getSeckillResult($("#goodsId").val());
                 } else {
                     layer.msg(data.msg);
                 }
@@ -107,6 +112,51 @@
     }
 
 
+    /**
+     * 轮询获取是否生成订单，即是否秒杀成功
+     */
+    function getSeckillResult(goodsId) {
+        $.ajax({
+            url : "/seckill/result",
+            type : "GET",
+            data : {
+                goodsId : $("#goodsId").val(),
+            },
+            success : function (data) {
+                if (data.code == 0){
+
+                    // 获取返回值
+                    var result = data.data;
+                    if (result < 0){
+                        layer.msg("秒杀失败，商品已被抢购完");
+                    } else if (result == 0){       // 继续轮询查询结果
+
+                        setTimeout(function () {
+                            getSeckillResult(goodsId);
+                        }, 50);
+                    }else {
+                        layer.confirm("恭喜你，秒杀成功！查看订单？", {btn: ["确定", "取消"]},
+                            function () {
+                                window.location.href = "/order_detail.htm?orderId=" + result;
+                            },
+                            function () {
+                                layer.closeAll();
+                            });
+                    }
+                } else {
+                    layer.msg(data.msg);
+                }
+            },
+            error : function () {
+                layer.msg("客户端请求有误");
+            }
+        });
+    }
+
+
+    /**
+     * 填充文本信息
+     */
     function getDetail() {
         var goodsId = g_getQueryString("goodsId");
 
