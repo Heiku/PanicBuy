@@ -51,7 +51,7 @@ public class MessageReceiver {
         }
 
         // 秒杀判断
-        SeckillOrder seckillOrder = orderService.getSeckillOrder(user.getId(), goodsId);;
+        SeckillOrder seckillOrder = orderService.getSeckillOrder(user.getId(), goodsId);
 
         // 是否先前已存在秒杀订单
         if (seckillOrder != null){
@@ -59,7 +59,7 @@ public class MessageReceiver {
         }
 
         // 秒杀成功：减库存，下订单，记录
-        OrderInfo orderInfo = seckillService.executeSeckill(user, goodsVo);
+       seckillService.executeSeckill(user, goodsVo);
 
 
     }

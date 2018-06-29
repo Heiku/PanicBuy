@@ -1,29 +1,38 @@
 package com.heiku.panicbuy.controller;
 
 
+import com.heiku.panicbuy.access.AccessLimit;
 import com.heiku.panicbuy.entity.OrderInfo;
 import com.heiku.panicbuy.entity.SeckillOrder;
 import com.heiku.panicbuy.entity.User;
 import com.heiku.panicbuy.rabbitmq.MessageSender;
 import com.heiku.panicbuy.rabbitmq.SeckillMessage;
+import com.heiku.panicbuy.redis.AccessKey;
 import com.heiku.panicbuy.redis.GoodsKey;
 import com.heiku.panicbuy.redis.RedisService;
+import com.heiku.panicbuy.redis.SeckillKey;
 import com.heiku.panicbuy.result.CodeMsg;
 import com.heiku.panicbuy.result.Result;
 import com.heiku.panicbuy.service.GoodsService;
 import com.heiku.panicbuy.service.OrderService;
 import com.heiku.panicbuy.service.SeckillService;
 import com.heiku.panicbuy.service.UserService;
+import com.heiku.panicbuy.util.MD5Util;
+import com.heiku.panicbuy.util.UUIDUtil;
 import com.heiku.panicbuy.vo.GoodsVo;
+import com.sun.org.apache.bcel.internal.classfile.Code;
+import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
+import javax.imageio.ImageIO;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
+import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -67,9 +76,10 @@ public class SeckillController implements InitializingBean {
      * @return
      */
     // 页面静态化处理
-    @RequestMapping(value = "/doseckill", method = RequestMethod.POST)
+    @RequestMapping(value = "/{path}/doseckill", method = RequestMethod.POST)
     @ResponseBody
-    public Result<Integer> doSeckill(Model model, User user, @RequestParam("goodsId") Long goodsId){
+    public Result<Integer> doSeckill(Model model, User user, @RequestParam("goodsId") Long goodsId,
+                                     @PathVariable("path") String path){
 
 
         // 用户不存在，返回error
@@ -78,6 +88,12 @@ public class SeckillController implements InitializingBean {
         }
         model.addAttribute("user", user);
 
+
+        // 验证地址
+        boolean checkPath = seckillService.checkSeckillPath(user, goodsId, path);
+        if (!checkPath){
+            return Result.error(CodeMsg.REQUEST_ILLEGAL);
+        }
 
         // 内存标记，减少redis访问
         boolean over = localOverMap.get(goodsId);
@@ -153,6 +169,64 @@ public class SeckillController implements InitializingBean {
             localOverMap.put(goodsVo.getId(), false);
         }
 
+    }
+
+
+    /**
+     * 获取秒杀地址
+     *
+     * @param model
+     * @param user
+     * @param goodsId
+     * @return
+     */
+    @RequestMapping(value = "/path", method = RequestMethod.GET)
+    @ResponseBody
+    @AccessLimit(seconds = 5, maxCount = 5, needLogin = true)
+    public Result<String> getSeckillPath(HttpServletRequest request, Model model, User user, @RequestParam("goodsId") long goodsId,
+                                 @RequestParam("verifyCode") int verifyCode){
+
+        if (user == null){
+            return Result.error(CodeMsg.SESSION_ERROR);
+        }
+        model.addAttribute("user", user);
+
+
+        // 验证码校验
+        boolean checkVerifyCode = seckillService.checkVerifyCode(user, goodsId, verifyCode);
+        if (user == null){
+            return Result.error(CodeMsg.REQUEST_ILLEGAL);
+        }
+
+        // 生成秒杀地址
+        String path = seckillService.createSeckillPath(user, goodsId);
+
+        return Result.success(path);
+
+    }
+
+
+    @RequestMapping(value = "/verifyCode", method = RequestMethod.GET)
+    @ResponseBody
+    public Result<String> getSeckillVerifyCode(Model model, User user, @RequestParam("goodsId") long goodsId,
+                                               HttpServletResponse response){
+
+        if (user == null){
+            return Result.error(CodeMsg.SESSION_ERROR);
+        }
+
+        BufferedImage image = seckillService.createVerifyCode(user, goodsId);
+        try {
+            OutputStream out = response.getOutputStream();
+            ImageIO.write(image, "JPEG", out);
+            out.flush();
+            out.close();
+
+            return null;
+        }catch (Exception e){
+            e.printStackTrace();
+            return Result.error(CodeMsg.SECKILL_FAIL);
+        }
     }
 
 

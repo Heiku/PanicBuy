@@ -47,7 +47,7 @@ public class UserService {
         // 缓存中没有，数据库读取
         user = userDao.getById(id);
         if (user != null){
-            redisService.set(UserKey.getById, "" + id, User.class);
+            redisService.set(UserKey.getById, "" + id, user);
         }
 
         return user;

@@ -3,19 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6542f4b4-88c9-48d2-be73-7d62e744e2c5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/SeckillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/SeckillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/SimpleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/GoodsKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/GoodsKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/SeckillKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/SeckillKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/result/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/result/CodeMsg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/SeckillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/SeckillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/good_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/good_detail.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/controller/SimpleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/controller/SimpleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heiku/panicbuy/redis/RedisService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,95 +43,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeckillController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SeckillController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/SeckillController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+            <state relative-caret-position="178">
+              <caret line="157" column="7" lean-forward="true" selection-start-line="157" selection-start-column="7" selection-end-line="157" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="good_detail.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/good_detail.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="133" column="44" lean-forward="true" selection-start-line="133" selection-start-column="44" selection-end-line="133" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="38" column="70" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserArgumentResolver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/RedisService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="163" column="9" selection-start-line="161" selection-start-column="62" selection-end-line="163" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3325#3355#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/OrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="66" column="55" lean-forward="true" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java">
+      <file leaf-file-name="AccessLimit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/access/AccessLimit.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeckillService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/SeckillService.java">
+      <file leaf-file-name="AccessInterceptor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/access/AccessInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="285">
+              <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
               <folding>
-                <element signature="e#1990#1991#0" expanded="true" />
-                <element signature="e#2023#2024#0" expanded="true" />
-                <element signature="e#2184#2185#0" expanded="true" />
-                <element signature="e#2266#2267#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,6 +81,7 @@
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -162,6 +95,9 @@
       <find>goodsPrice</find>
       <find>miaoshaTip</find>
       <find>buyButton</find>
+      <find>g_showLoading</find>
+      <find>Entry</find>
+      <find>set(</find>
     </findStrings>
     <replaceStrings>
       <replace>remain</replace>
@@ -174,14 +110,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/validator/IsMobileValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/validator/IsMobile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/exception/GlobleException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/exception/GlobleExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/exception/GlobalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/util/UUIDUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/entity/Goods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/entity/OrderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/entity/SeckillOrder.java" />
@@ -190,7 +121,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/entity/SeckillGoods.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/seckill_fail.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/order_detail.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/MainApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/util/DBUtil.java" />
@@ -199,11 +129,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/GoodsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/UserKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/good_lists.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/vo/GoodsDetailVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/vo/OrderDetailVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/result/CodeMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/OrderDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/order_detail.htm" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/OrderKey.java" />
@@ -216,15 +144,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/SeckillMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageQueueConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/SimpleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/RedisService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/SeckillKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/SeckillService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/good_detail.htm" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/RedisService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/result/CodeMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/access/AccessLimit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/access/UserContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/AccessKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/SeckillController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/access/AccessInterceptor.java" />
       </list>
     </option>
   </component>
@@ -250,9 +186,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="965" />
-    <option name="width" value="770" />
-    <option name="height" value="867" />
+    <option name="x" value="912" />
+    <option name="y" value="1" />
+    <option name="width" value="1128" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -262,7 +199,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,6 +241,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="panicbuy" type="462c0819:PsiDirectoryNode" />
+              <item name="access" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panicBuy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="panicBuy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="panicbuy" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,19 +268,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="panicbuy" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panicBuy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="panicBuy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="panicbuy" type="462c0819:PsiDirectoryNode" />
               <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="good_de&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/static/good_detail.htm&#10;Rec&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java&#10;MessageCon&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/rabbitmq/MessageQueueConfig.java&#10;Goods&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/GoodsKey.java&#10;Sec&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/SeckillController.java&#10;prop&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/application.properties&#10;po&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/pom.xml&#10;OrderKe&#9;PSI&#9;JAVA://com.heiku.panicbuy.redis.OrderKey&#10;OrderSer&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/service/OrderService.java&#10;Order&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/OrderDetailVo.java&#10;o&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/OrderDetailVo.java&#10;Code&#9;PSI&#9;JAVA://com.heiku.panicbuy.result.CodeMsg&#10;Duration&#9;PSI&#9;JAVA://java.time.Duration&#10;pro&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/application.properties&#10;G&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/GoodsDetailVo.java&#10;GoodsController&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/GoodsController.java&#10;pr&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/application.properties&#10;redisSer&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/RedisService.java&#10;UserK&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/UserKey.java&#10;UserService&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/service/UserService.java&#10;pom&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/pom.xml&#10;IContext&#9;FILE&#9;jar://C:/Users/LJH/.m2/repository/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/context/IContext.class&#10;SeckillSer&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/service/SeckillService.java&#10;login&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/templates/login.html&#10;detai&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/templates/order_detail.html&#10;Seck&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/entity/SeckillGoods.java&#10;Se&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/entity/SeckillGoods.java&#10;CodeM&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/result/CodeMsg.java&#10;vo&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/GoodsVo.java&#10;GoodsDA&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/dao/GoodsDao.java&#10;good_l&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/templates/good_lists.html&#10;GoodscON&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/GoodsController.java&#10;User&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/UserKey.java&#10;V&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/LoginVo.java&#10;Md&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/util/MD5Util.java&#10;Login&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/LoginVo.java&#10;Sim&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/SimpleController.java&#10;p&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/pom.xml&#10;UserSer&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/service/UserService.java" />
+    <property name="SearchEverywhereHistoryKey" value="Seck&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/SeckillController.java&#10;User&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java&#10;SEc&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/SeckillController.java&#10;Se&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/SeckillController.java&#10;DE&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/static/good_detail.htm&#10;redisS&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/RedisService.java&#10;Login&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/LoginController.java&#10;Code&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/result/CodeMsg.java&#10;SeckillK&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/SeckillKey.java&#10;good_&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/static/good_detail.htm&#10;Seckill&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/SeckillKey.java&#10;good_detail&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/static/good_detail.htm&#10;good_de&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/static/good_detail.htm&#10;Rec&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java&#10;MessageCon&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/rabbitmq/MessageQueueConfig.java&#10;Goods&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/GoodsKey.java&#10;Sec&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/SeckillController.java&#10;prop&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/application.properties&#10;po&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/pom.xml&#10;OrderKe&#9;PSI&#9;JAVA://com.heiku.panicbuy.redis.OrderKey&#10;OrderSer&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/service/OrderService.java&#10;Order&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/OrderDetailVo.java&#10;o&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/OrderDetailVo.java&#10;Duration&#9;PSI&#9;JAVA://java.time.Duration&#10;pro&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/application.properties&#10;G&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/GoodsDetailVo.java&#10;GoodsController&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/GoodsController.java&#10;pr&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/application.properties&#10;redisSer&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/RedisService.java&#10;UserK&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/redis/UserKey.java&#10;UserService&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/service/UserService.java&#10;pom&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/pom.xml&#10;IContext&#9;FILE&#9;jar://C:/Users/LJH/.m2/repository/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/context/IContext.class&#10;SeckillSer&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/service/SeckillService.java&#10;login&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/templates/login.html&#10;detai&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/templates/order_detail.html&#10;CodeM&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/result/CodeMsg.java&#10;vo&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/GoodsVo.java&#10;GoodsDA&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/dao/GoodsDao.java&#10;good_l&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/resources/templates/good_lists.html&#10;GoodscON&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/GoodsController.java&#10;V&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/vo/LoginVo.java&#10;Md&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/util/MD5Util.java&#10;Sim&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/controller/SimpleController.java&#10;p&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/pom.xml&#10;UserSer&#9;FILE&#9;file://E:/Java/projects/SISE/panicBuy/src/main/java/com/heiku/panicbuy/service/UserService.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../LeetCode-Solution" />
@@ -381,6 +336,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.heiku.panicbuy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="SeckillService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.heiku.panicbuy.service.SeckillService" />
+      <module name="panicBuy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heiku.panicbuy.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,10 +419,12 @@
       <item itemvalue="Application.MainApplication" />
       <item itemvalue="Application.MD5Util" />
       <item itemvalue="Application.ValidatorUtil" />
+      <item itemvalue="Application.SeckillService" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainApplication" />
+        <item itemvalue="Application.SeckillService" />
         <item itemvalue="Application.ValidatorUtil" />
         <item itemvalue="Application.MD5Util" />
       </list>
@@ -488,12 +456,13 @@
       <workItem from="1530076001766" duration="2029000" />
       <workItem from="1530107197119" duration="3420000" />
       <workItem from="1530116320665" duration="158000" />
-      <workItem from="1530150421603" duration="20291000" />
+      <workItem from="1530150421603" duration="21192000" />
+      <workItem from="1530243991286" duration="22241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164579000" />
+    <option name="totallyTimeSpent" value="187721000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,11 +474,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="965" y="0" width="770" height="867" extended-state="0" />
+    <frame x="730" y="1" width="902" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50130206" side_tool="true" weight="0.3743094" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5013889" side_tool="true" weight="0.44078946" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -526,10 +495,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986979" weight="0.35422343" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986979" visible="true" weight="0.3281471" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.44192636" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861878" weight="0.5808147" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49861112" weight="0.2776243" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49861878" weight="0.34797296" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -543,14 +512,13 @@
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3294271" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info id="Image Layers" order="3" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49934897" visible="true" weight="0.3839779" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3294271" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32965517" />
@@ -573,6 +541,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3294271" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4987775" weight="0.3286908" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -590,76 +559,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf-spring5/3.0.9.RELEASE/thymeleaf-spring5-3.0.9.RELEASE.jar!/org/thymeleaf/spring5/context/webmvc/SpringWebMvcThymeleafRequestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1533">
-          <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf-spring5/3.0.9.RELEASE/thymeleaf-spring5-3.0.9.RELEASE.jar!/org/thymeleaf/spring5/context/webflux/SpringWebFluxEngineContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/context/IExpressionContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/context/ITemplateContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf-spring5/3.0.9.RELEASE/thymeleaf-spring5-3.0.9.RELEASE.jar!/org/thymeleaf/spring5/context/SpringContextUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/context/AbstractContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/context/Context.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/ITemplateEngine.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/context/IContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar!/org/thymeleaf/context/WebContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/UserKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -678,13 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -709,24 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/result/CodeMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/entity/OrderInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/OrderDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -804,9 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,18 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageQueueConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/GoodsDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -870,10 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -884,107 +743,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageSender.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/util/UUIDUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="114">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/OrderKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/SeckillKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-          <folding>
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-          </folding>
+          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="19">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/good_detail.htm">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31.jar!/org/apache/tomcat/util/threads/TaskThread.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="133" column="44" lean-forward="true" selection-start-line="133" selection-start-column="44" selection-end-line="133" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="38" column="70" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/OrderKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="71" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/SeckillService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2023#2024#0" expanded="true" />
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="e#2266#2267#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="148">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/RedisService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="163" column="9" selection-start-line="161" selection-start-column="62" selection-end-line="163" selection-end-column="9" />
+        <state relative-caret-position="52">
+          <caret line="181" column="42" lean-forward="true" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3325#3355#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/result/CodeMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/good_detail.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="111" column="27" lean-forward="true" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#td#3;n#tr#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#td#3;n#tr#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageQueueConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/SeckillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="66" column="55" lean-forward="true" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+        <state relative-caret-position="90">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/rabbitmq/MessageReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/AccessLimit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../jdk1.8.0_77/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1678">
+          <caret line="464" column="34" lean-forward="true" selection-start-line="464" selection-start-column="34" selection-end-line="464" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/access/UserContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/UserArgumentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/redis/AccessKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="56" />
+          <folding>
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/access/AccessLimit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/controller/SeckillController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+        <state relative-caret-position="178">
+          <caret line="157" column="7" lean-forward="true" selection-start-line="157" selection-start-column="7" selection-end-line="157" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/heiku/panicbuy/access/AccessInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -5,7 +5,8 @@ public enum  CodeMsg {
     SUCCESS(0, "Success"),
     SERVER_ERROR(500100, "服务端异常"),
     BIND_ERROR(500101, "参数校验异常"),
-
+    REQUEST_ILLEGAL(500102, "请求非法"),
+    ACCESS_FREQUENT(500103, "访问次数限制"),
 
     // LOGIN
     SESSION_ERROR(500210, "Session不存在或已经失效"),
@@ -19,6 +20,7 @@ public enum  CodeMsg {
     // SECKILL
     SECKILL_OVER(500500, "商品已经被秒杀完了"),
     SECKILL_REPEATE(500501, "不允许重复参与秒杀活动"),
+    SECKILL_FAIL(500502, "秒杀失败"),
 
 
     // ORDER
